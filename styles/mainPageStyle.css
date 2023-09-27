@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(1, 1, 1, 0.1);
+    outline: 1px solid black; */
+    font-family: 'Quicksand';
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.upper{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+}
+
+.upper img{
+    width: 70px;
+}
+
+.upper img:first-child{
+    filter: drop-shadow(4px 4px 5px grey);
+}
+
+.upper img:last-child{
+    width: 100px;
+}
+
+.upper #collegeName h1{
+    filter: drop-shadow(2px 2px 2px yellow);
+}
+
+.lower{
+    padding: 20px 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid yellow;
+}
+
+.lower ul{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.lower ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.lower ul li{
+    transition: 0.2s ease-in-out;
+}
+
+.lower ul li:hover{
+    transform: scale(1.2);
+}
+
+.wrapper{
+    position: relative;
+    background: grey;
+}
+
+.wrapper img{
+    width: 100%;
+}
+
+.wrapper h1{
+    font-size: 100px;
+    position: absolute;
+}
+
+.aboutSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection h1{
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    filter: drop-shadow(2px 2px 2px rgb(255, 213, 0));
+}
+
+.aboutSection p{
+    width: 40%;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+.aboutSection p a{
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border: 2px solid black;
+    font-weight: 900;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.aboutSection p a:hover{
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+}
+
+.aboutSection img, p{
+    padding: 0 2.5vw;
+}
