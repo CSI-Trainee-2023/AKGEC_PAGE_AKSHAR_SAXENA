@@ -1,87 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* background-color: rgb(1, 1, 1, 0.1);
-    outline: 1px solid black; */
-    font-family: 'Quicksand';
-}
-
-header{
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-}
-
-.upper{
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 2px solid black;
-}
-
-.upper img{
-    width: 70px;
-}
-
-.upper img:first-child{
-    filter: drop-shadow(4px 4px 5px grey);
-}
-
-.upper img:last-child{
-    width: 100px;
-}
-
-.upper #collegeName h1{
-    filter: drop-shadow(2px 2px 2px yellow);
-}
-
-.lower{
-    padding: 20px 0;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-bottom: 2px solid yellow;
-}
-
-.lower ul{
-    display: flex;
-    width: 70%;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-.lower ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-.lower ul li{
-    transition: 0.2s ease-in-out;
-}
-
-.lower ul li:hover{
-    transform: scale(1.2);
-}
-
-.wrapper{
+.wrapper {
     position: relative;
     background: grey;
 }
 
-.wrapper img{
+.wrapper img {
     width: 100%;
 }
 
-.wrapper h1{
+/* .wrapper h1 {
     font-size: 100px;
     position: absolute;
+} */
+
+header{
+    position: fixed;
+    top: 0;
 }
 
-.aboutSection{
+.aboutSection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,20 +25,23 @@ header{
     align-items: center;
 }
 
-.aboutSection h1{
+
+h1 {
     padding: 15px 0;
     text-align: center;
     width: 100%;
     filter: drop-shadow(2px 2px 2px rgb(255, 213, 0));
+    color: black;
 }
 
-.aboutSection p{
+.aboutSection p {
     width: 40%;
     font-size: 1.2vw;
     text-align: justify;
+    color: black;
 }
 
-.aboutSection p a{
+.aboutSection p a {
     text-decoration: none;
     border-radius: 50px;
     margin-top: 20px;
@@ -113,12 +52,72 @@ header{
     transition: 0.3s ease-in-out;
 }
 
-.aboutSection p a:hover{
+.aboutSection p a:hover {
     background-color: blue;
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
 }
 
-.aboutSection img, p{
+.aboutSection img,
+p {
     padding: 0 2.5vw;
+}
+
+.coursesSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    outline: 1px solid black;
+    height: 260px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.3s ease-in-out;
+    color: black;
+}
+
+.card:hover {
+    box-shadow: none;
+    box-shadow: -2px -2px 10px black;
+    cursor: pointer;
+}
+
+.card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card,
+.card img {
+    width: 350px;
+}
+
+.card h2 {
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 800;
+}
+
+.card p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.testimonalSection {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testimonalSection img {
+    padding: 10px 0;
+    width: 500px;
 }

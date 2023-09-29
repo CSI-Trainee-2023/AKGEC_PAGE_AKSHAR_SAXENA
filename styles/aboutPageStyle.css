@@ -1,0 +1,45 @@
+h1 {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    filter: drop-shadow(2px 2px 2px rgb(255, 213, 0));
+    color: black;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection p,
+span {
+    width: 75vw;
+    text-align: justify;
+}
+
+.aboutSection span {
+    margin: 15px 0;
+    font-weight: 900;
+}
+
+.aboutSection h2{
+    margin: 15px 0;
+    width: 75vw;
+    padding: 15px 0;
+    background-color: rgba(255, 242, 0, 0.778);
+    text-align: center;
+}
+
+.aboutSection ul{
+    width: 65vw;
+}
+
+.aboutSection ul li{
+    padding: 5px 0;
+}
+
+.aboutSection ul li span{
+    font-weight: 900;
+}
