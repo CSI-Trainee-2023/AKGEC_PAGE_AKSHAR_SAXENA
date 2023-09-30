@@ -7,12 +7,7 @@
     width: 100%;
 }
 
-/* .wrapper h1 {
-    font-size: 100px;
-    position: absolute;
-} */
-
-header{
+header {
     position: fixed;
     top: 0;
 }
@@ -120,4 +115,47 @@ p {
 .testimonalSection img {
     padding: 10px 0;
     width: 500px;
+}
+
+@media only screen and (max-width: 1000px){
+    .aboutSection p{
+        font-size: 20px;
+        padding: 15px 0;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .aboutSection img{
+        width: 80%;
+    }
+    .aboutSection p{
+        width: 80%;
+    }
+    .wrapper{
+        margin-top: 470px;
+    }
+    .testimonalSection img{
+        width: 80%;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 460px){
+    .wrapper{
+        margin-top: 400px;
+    }
+    .aboutSection p{
+        font-size: 15px;
+    }
+    .card{
+        width: 70%;
+        height: auto;
+    }
+    .card img{
+        width: 100%;
+    }
 }
