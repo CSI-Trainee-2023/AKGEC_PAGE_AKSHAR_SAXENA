@@ -1,16 +1,8 @@
-.wrapper {
-    position: relative;
-    background: grey;
-}
-
 .wrapper img {
+    animation: slideIn 1s ease-in-out;
     width: 100%;
 }
 
-header {
-    position: fixed;
-    top: 0;
-}
 
 .aboutSection {
     display: flex;
@@ -18,7 +10,10 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation: slideIn 1s ease-in-out;
+
 }
+
 
 
 h1 {
@@ -49,7 +44,7 @@ h1 {
 
 .aboutSection p a:hover {
     background-color: blue;
-    color: black;
+    color: white;
     border: 2px solid black;
 }
 
@@ -63,6 +58,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.6s ease-in-out;
 }
 
 .card {
@@ -82,6 +80,7 @@ p {
     box-shadow: -2px -2px 10px black;
     cursor: pointer;
 }
+
 
 .card img {
     border-top-left-radius: 20px;
@@ -110,52 +109,72 @@ p {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.6s ease-in-out;
 }
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .testimonalSection img {
     padding: 10px 0;
     width: 500px;
 }
 
-@media only screen and (max-width: 1000px){
-    .aboutSection p{
+@media only screen and (max-width: 1000px) {
+    .aboutSection p {
         font-size: 20px;
         padding: 15px 0;
     }
 }
 
 
-@media only screen and (max-width: 600px){
-    .aboutSection img{
+@media only screen and (max-width: 600px) {
+    .aboutSection img {
         width: 80%;
     }
-    .aboutSection p{
+
+    .aboutSection p {
         width: 80%;
     }
-    .wrapper{
-        margin-top: 470px;
-    }
-    .testimonalSection img{
+
+    .testimonalSection img {
         width: 80%;
     }
-    h1{
+
+    h1 {
         font-size: 20px;
     }
 }
 
 
-@media only screen and (max-width: 460px){
-    .wrapper{
-        margin-top: 400px;
-    }
-    .aboutSection p{
+@media only screen and (max-width: 460px) {
+
+    .aboutSection p {
         font-size: 15px;
     }
-    .card{
+
+    .card {
         width: 70%;
         height: auto;
     }
-    .card img{
+
+    .card img {
         width: 100%;
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
